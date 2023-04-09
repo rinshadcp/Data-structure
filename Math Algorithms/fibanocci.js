@@ -6,3 +6,5 @@ function fibanocci(n) {
   return fib;
 }
 console.log(fibanocci(5));
+
+// Big-O = O(n)  => 1 loop

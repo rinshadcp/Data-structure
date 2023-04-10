@@ -7,6 +7,7 @@ function recursiveFibanocci(n) {
 console.log(recursiveFibanocci(0));
 console.log(recursiveFibanocci(1));
 console.log(recursiveFibanocci(7));
+console.log(recursiveFibanocci(10));
 
 
 // Big-O = O(2^n)

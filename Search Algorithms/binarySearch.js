@@ -17,3 +17,5 @@ function binarySearch(arr, target) {
 console.log(binarySearch([-5, 8, 10, 45, 56, 120, 253, 545, 5000], 45));
 console.log(binarySearch([-5, 8, 10, 45, 56, 120, 253, 545, 5000], 101));
 console.log(binarySearch([-5, 8, 10, 45, 56, 120, 253, 545, 5000], -5));
+
+// Big-O = O(logn)

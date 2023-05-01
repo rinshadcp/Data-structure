@@ -1,3 +1,5 @@
+//O(n^2)-Quadratic
+
 function insertionSort(arr){
     for(let i=1;i<arr.length;i++){
         let currentValue=arr[i]

@@ -16,7 +16,7 @@ class Stack{
         if(this.items.length===0){
             return null
         }
-        return this.items[this.items.length-1]
+        return this.items[this.items.length-1] //top element
     }
     isEmpty(){
         return this.items.length===0

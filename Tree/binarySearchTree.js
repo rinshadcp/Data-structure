@@ -56,10 +56,21 @@ class BinarySearchTree {
     queue.push(node);
     while (queue.length) {
       node = queue.shift();
-      data.push(node.value)
+      data.push(node.value);
       if (node.left) queue.push(node.left);
       if (node.right) queue.push(node.right);
     }
+    return data;
+  }
+  DFSPreOrder() {
+    let data = [];
+    let current = this.root;
+    function traverse(node) {
+      data.push(node.value);
+      if (node.left) traverse(node.left);
+      if (node.right) traverse(node.right);
+    }
+    traverse(current);
     return data;
   }
 }
@@ -75,3 +86,4 @@ bst.insert(15);
 console.log(bst);
 console.log(bst.find(20));
 console.log(bst.BFS());
+console.log(bst.DFSPreOrder())

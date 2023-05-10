@@ -73,6 +73,18 @@ class BinarySearchTree {
     traverse(current);
     return data;
   }
+  DFSPostOrder(){
+    let data=[]
+    function traverse(node){
+        node.left && traverse(node.left)
+        node.right && traverse(node.right)
+        data.push(node.value)
+
+    }
+    traverse(this.root)
+    return data
+
+  }
 }
 
 let bst = new BinarySearchTree();
@@ -87,3 +99,4 @@ console.log(bst);
 console.log(bst.find(20));
 console.log(bst.BFS());
 console.log(bst.DFSPreOrder())
+console.log(bst.DFSPostOrder())
